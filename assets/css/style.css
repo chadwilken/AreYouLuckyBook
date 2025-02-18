@@ -34,6 +34,7 @@ body {
     height: 100%;
     -webkit-font-smoothing: subpixel-antialiased;
 }
+
 ::before,
 ::after {
     content: "";
@@ -46,7 +47,12 @@ body {
     color: #4c527d;
 }
 
-h1,h2,h3,h4,h5,h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-family: 'Ubuntu', sans-serif;
     color: #1c1e2e;
     font-weight: bold;
@@ -153,7 +159,8 @@ path {
     text-transform: uppercase;
 }
 
-.btn:focus,.btn.focus {
+.btn:focus,
+.btn.focus {
     box-shadow: none !important;
 }
 
@@ -167,7 +174,10 @@ path {
     color: #fff;
 }
 
-.btn-secondary:hover,.btn-secondary:active,.btn-secondary:focus,.btn-secondary:not(:disabled):not(.disabled):active {
+.btn-secondary:hover,
+.btn-secondary:active,
+.btn-secondary:focus,
+.btn-secondary:not(:disabled):not(.disabled):active {
     background: transparent;
     border: 2px solid #fff;
     color: white;
@@ -179,6 +189,7 @@ path {
 .form-group {
     margin-bottom: 20px;
 }
+
 .form-control {
     height: 52px;
     border-color: #e3e9f6;
@@ -205,7 +216,7 @@ path {
     width: 2.5rem;
     height: 2.5rem;
     border-radius: 50%;
-    box-shadow: 0 0.125rem 0.25rem rgba(0,0,0,0.075);
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
     padding-top: 0.5rem;
     font-weight: 300;
     font-size: 1rem;
@@ -283,7 +294,8 @@ path {
 .book_spine li:last-child:before {
     background: #999;
 }
-.page > li {
+
+.page>li {
     background: -webkit-linear-gradient(left, #e1ddd8 0%, #fffbf6 100%);
     background: -moz-linear-gradient(left, #e1ddd8 0%, #fffbf6 100%);
     background: -ms-linear-gradient(left, #e1ddd8 0%, #fffbf6 100%);
@@ -334,6 +346,7 @@ path {
     -moz-transform: rotateY(-36deg);
     transform: rotateY(-36deg);
 }
+
 .hardcover_front,
 .hardcover_back,
 .book_spine,
@@ -540,7 +553,7 @@ path {
 }
 
 .page,
-.page > li {
+.page>li {
     position: absolute;
     top: 0;
     left: 0;
@@ -558,7 +571,7 @@ path {
     list-style: none;
 }
 
-.page > li {
+.page>li {
     width: 100%;
     height: 100%;
     -webkit-transform-origin: left center;
@@ -572,63 +585,64 @@ path {
     transition-timing-function: ease;
 }
 
-.page > li:nth-child(1) {
+.page>li:nth-child(1) {
     -webkit-transition-duration: 0.6s;
     -moz-transition-duration: 0.6s;
     transition-duration: 0.6s;
 }
 
-.page > li:nth-child(2) {
+.page>li:nth-child(2) {
     -webkit-transition-duration: 0.6s;
     -moz-transition-duration: 0.6s;
     transition-duration: 0.6s;
 }
 
-.page > li:nth-child(3) {
+.page>li:nth-child(3) {
     -webkit-transition-duration: 0.4s;
     -moz-transition-duration: 0.4s;
     transition-duration: 0.4s;
 }
 
-.page > li:nth-child(4) {
+.page>li:nth-child(4) {
     -webkit-transition-duration: 0.5s;
     -moz-transition-duration: 0.5s;
     transition-duration: 0.5s;
 }
 
-.page > li:nth-child(5) {
+.page>li:nth-child(5) {
     -webkit-transition-duration: 0.6s;
     -moz-transition-duration: 0.6s;
     transition-duration: 0.6s;
 }
 
-.page > li > span {
+.page>li>span {
     text-align: center;
     margin-top: 55px;
     margin-bottom: 0;
     display: block;
 }
 
-.page > li span img {
+.page>li span img {
     margin: 0 auto;
     display: block;
     max-width: 60px;
 }
 
-.page > li span span {
+.page>li span span {
     margin: 10px 0 0;
     text-transform: uppercase;
     font-size: 14px;
     display: block;
 }
-.book:hover > .hardcover_front {
+
+.book:hover>.hardcover_front {
     -webkit-transform: rotateY(-145deg) translateZ(0);
     -moz-transform: rotateY(-145deg) translateZ(0);
     transform: rotateY(-145deg) translateZ(0);
     z-index: 0;
 }
 
-.book:hover > .page li:nth-child(1) {
+.book:hover>.page li:nth-child(1) {
     -webkit-transform: rotateY(-30deg);
     -moz-transform: rotateY(-30deg);
     transform: rotateY(-30deg);
@@ -637,7 +651,7 @@ path {
     transition-duration: 1.5s;
 }
 
-.book:hover > .page li:nth-child(2) {
+.book:hover>.page li:nth-child(2) {
     -webkit-transform: rotateY(-35deg);
     -moz-transform: rotateY(-35deg);
     transform: rotateY(-35deg);
@@ -646,7 +660,7 @@ path {
     transition-duration: 1.8s;
 }
 
-.book:hover > .page li:nth-child(3) {
+.book:hover>.page li:nth-child(3) {
     -webkit-transform: rotateY(-118deg);
     -moz-transform: rotateY(-118deg);
     transform: rotateY(-118deg);
@@ -655,7 +669,7 @@ path {
     transition-duration: 1.6s;
 }
 
-.book:hover > .page li:nth-child(4) {
+.book:hover>.page li:nth-child(4) {
     -webkit-transform: rotateY(-130deg);
     -moz-transform: rotateY(-130deg);
     transform: rotateY(-130deg);
@@ -664,7 +678,7 @@ path {
     transition-duration: 1.4s;
 }
 
-.book:hover > .page li:nth-child(5) {
+.book:hover>.page li:nth-child(5) {
     -webkit-transform: rotateY(-140deg);
     -moz-transform: rotateY(-140deg);
     transform: rotateY(-140deg);
@@ -686,16 +700,23 @@ path {
     backface-visibility: hidden;
 }
 
+.coverDesign .cover-img {
+    width: 100%;
+    height: 220px;
+}
+
 /* Modal Checkout
 ================================================== */
 
 .modal-dialog .modal-content {
     border-radius: 1rem;
 }
+
 .modal-dialog .modal-content p {
     font-size: 18px;
     font-weight: 600;
 }
+
 .modal-dialog button.close {
     width: 40px;
     height: 40px;
@@ -742,7 +763,7 @@ path {
     max-height: 610px;
 }
 
-.hero-section > .container {
+.hero-section>.container {
     margin-top: -40px;
 }
 
@@ -772,14 +793,17 @@ path {
 
 .hero-section .subheadline {
     font-size: 1.25rem;
-    color:#eee;
+    color: #eee;
 }
 
 .hero-section .btn-primary {
     background-color: #fff;
 }
 
-.hero-section .btn-primary:hover, .hero-section .btn-primary:active, .hero-section .btn-primary:focus, .hero-section .btn-primary:not(:disabled):not(.disabled):active{
+.hero-section .btn-primary:hover,
+.hero-section .btn-primary:active,
+.hero-section .btn-primary:focus,
+.hero-section .btn-primary:not(:disabled):not(.disabled):active {
     background-color: #fff;
 }
 
@@ -894,6 +918,7 @@ path {
     background-color: #f2f2f2;
     padding: 30px 0 40px;
 }
+
 .reviews-section .item-inner {
     height: 100%;
     position: relative;
@@ -948,12 +973,12 @@ path {
 .author-section .author-pic {
     width: 150px;
     height: 150px;
-    border: 3px solid rgba(0,0,0,0.2);
+    border: 3px solid rgba(0, 0, 0, 0.2);
     border-radius: 50%;
 }
 
 .author-section .social-list li {
-    background: rgba(0,0,0,0.1);
+    background: rgba(0, 0, 0, 0.1);
     width: 36px;
     height: 36px;
     display: inline-block;
@@ -961,7 +986,7 @@ path {
 }
 
 .author-section .social-list li:hover {
-    background: rgba(0,0,0,0.15);
+    background: rgba(0, 0, 0, 0.15);
 }
 
 .author-section .social-list a {
@@ -994,6 +1019,7 @@ path {
         max-width: calc(100% - 30px);
         margin: 15px auto;
     }
+
     .section-heading {
         font-size: 1.75rem;
     }
@@ -1020,40 +1046,50 @@ path {
     .email-field {
         padding-right: 10px;
     }
+
     .cardholder-field {
         padding-left: 10px;
     }
 }
 
 @media (max-width: 767px) {
-    .hero-section > .container {
+    .hero-section>.container {
         margin-top: 50px;
     }
+
     .hero-section .bottom-shape {
         height: 210px;
     }
+
     svg {
         height: 25px;
     }
+
     svg.negative-margin {
         margin-top: -2px;
     }
+
     .benefits-section {
         padding-top: 150px;
     }
+
     .content-section .book {
         margin: 20px 0 60px;
         transform: none;
     }
+
     .hero-section .book {
         margin-top: 110px;
     }
+
     .audience-section {
         padding: 40px 0 30px;
     }
+
     .form-section {
         padding: 40px 0;
     }
+
     .email-field {
         margin-bottom: 20px;
     }
@@ -1069,12 +1105,15 @@ path {
     .hero-section .book {
         pointer-events: none;
     }
+
     .hero-section .bottom-shape {
         height: 60px;
     }
+
     .modal-dialog .book {
         margin-top: 50px;
     }
+
     .hero-quotes .quote:after {
         left: 50%;
         margin-left: -10px;
@@ -1087,7 +1126,8 @@ path {
     .form-inline .form-control {
         width: 200px;
     }
-    .align > li {
+
+    .align>li {
         width: 100%;
         min-height: 440px;
         height: auto;
